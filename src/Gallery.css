@@ -1,0 +1,23 @@
+.photo-gallery {
+	margin: 20px;
+}
+
+.photo {
+	padding: 10px;
+	width: 560px;
+	height: 560px;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+.photo:hover {
+	transform: scale(1.1);
+}
+
+.tooltip {
+	font-size: 14px;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	padding: 5px;
+	border-radius: 4px;
+}
