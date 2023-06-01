@@ -25,9 +25,12 @@ function App() {
 	return (
 		<>
 			<div className="row screen">
-				<div className="col-md-12 screen">
+				<div className="col-md-12 screen first">
 					<h1>BOO! Its me!</h1>
 				</div>
+				<p>
+					<b>Scroll Down!</b>
+				</p>
 				<div className="col-md-12 screen">
 					<div className="row">
 						<div className="col-md-12">
