@@ -1,7 +1,15 @@
 body {
 	height: 100vh;
 	align-items: center;
-	text-align: center;
 	justify-content: center;
 	display: flex;
+}
+
+select {
+	background-color: transparent !important;
+	border: none !important;
+	border-bottom: 2px solid black !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	margin-bottom: 10px !important;
 }
