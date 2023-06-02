@@ -8,7 +8,6 @@ function App() {
 	const [isPresentOpen, setIsPresentOpen] = useState(false);
 	const [didRickRollCome, setDidRickRollCome] = useState(false);
 	const [name, setName] = useState("");
-
 	const videoRef: any = createRef();
 	const scrollToBottom = () => {
 		const body: any = document.querySelector("body");
@@ -34,7 +33,10 @@ function App() {
 						<div className="col-md-12">
 							<Form.Select
 								aria-label="What to call ya?"
-								onChange={(e) => setName(e.target.value)}
+								onChange={(e) => {
+									setName(e.target.value);
+									document.title = `HEY ${e.target.value}!`;
+								}}
 							>
 								<option value="">
 									What should i call you?
