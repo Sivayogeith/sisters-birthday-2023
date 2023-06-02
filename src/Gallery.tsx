@@ -1,6 +1,10 @@
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import "./Gallery.css";
-const Gallery = () => {
+import { FC } from "react";
+interface GalleryProps {
+	name: string;
+}
+const Gallery: FC<GalleryProps> = ({ name }) => {
 	const renderTooltip = (text: string) => (
 		<Tooltip id="tooltip">{text}</Tooltip>
 	);
@@ -11,7 +15,7 @@ const Gallery = () => {
 				<div className="col-md-6">
 					<OverlayTrigger
 						placement="top"
-						overlay={renderTooltip("Butham Saranam Gachami")}
+						overlay={renderTooltip("Butham Saranam Gachami!")}
 					>
 						<img
 							src="/with_budha.jpeg"
@@ -24,7 +28,7 @@ const Gallery = () => {
 					<OverlayTrigger
 						placement="top"
 						overlay={renderTooltip(
-							"Oooo, this iiss veery creeppy!"
+							"Oooo, this iss veery creeppy! LOL"
 						)}
 					>
 						<img src="/alley.jpeg" alt="Alley" className="photo" />
@@ -35,7 +39,7 @@ const Gallery = () => {
 				<div className="col-md-6">
 					<OverlayTrigger
 						placement="top"
-						overlay={renderTooltip("Thanks for the cake, Sis!")}
+						overlay={renderTooltip(`Thanks for the cake, ${name}!`)}
 					>
 						<img src="/cake.jpg" alt="Cake" className="photo" />
 					</OverlayTrigger>
@@ -44,7 +48,7 @@ const Gallery = () => {
 					<OverlayTrigger
 						placement="top"
 						overlay={renderTooltip(
-							"What you should not be here! Sorry, Sis"
+							`Huh?, you should not be here! Sorry, ${name}; Awwwww SO CUTEE`
 						)}
 					>
 						<img
