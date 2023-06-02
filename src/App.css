@@ -10,3 +10,6 @@
 .screen.first {
 	height: 95%;
 }
+.stick-bottom {
+	border-radius: 0 !important;
+}

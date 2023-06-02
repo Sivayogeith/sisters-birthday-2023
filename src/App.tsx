@@ -163,6 +163,8 @@ function App() {
 
 						{isPresentOpen ? (
 							<Button
+								variant="dark"
+								className="stick-bottom"
 								disabled={!didRickRollCome}
 								onClick={() => {
 									Swal.fire({
@@ -177,6 +179,8 @@ function App() {
 							</Button>
 						) : (
 							<Button
+								variant="dark"
+								className="stick-bottom"
 								onClick={() => {
 									setIsPresentOpen(true);
 									scrollToBottom();
